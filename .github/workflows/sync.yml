@@ -1,0 +1,77 @@
+name: ドライブから新しい号を取り込んで公開
+
+on:
+  schedule:
+    - cron: "17 * * * *"   # 1時間ごと
+  workflow_dispatch:        # Actions タブの「Run workflow」で今すぐ実行
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: sync-and-deploy
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pymupdf
+
+      - name: ドライブを確認して取り込む
+        run: python scripts/sync.py
+
+      - name: 変更があればコミット
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data covers
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "新しい号を取り込み（自動）"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # 60日間コミットがないと定期実行が止まるので、長期休みの間も止まらないようにする
+      - name: 定期実行の停止を防ぐ
+        if: steps.commit.outputs.changed == 'false'
+        run: |
+          last=$(git log -1 --format=%ct)
+          if [ $(( $(date +%s) - last )) -gt $(( 50 * 86400 )) ]; then
+            git commit --allow-empty -m "定期実行の維持（自動）"
+            git push
+          fi
+
+  deploy:
+    needs: sync
+    if: github.event_name != 'schedule' || needs.sync.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - id: deploy
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIの回し者 バックナンバー</title>
+<meta name="description" content="登別中学校 教務主任・三浦のAI通信「AIの回し者」のバックナンバー。表紙から選んで、そのまま読めます。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AIの回し者 バックナンバー">
+<meta property="og:description" content="教務主任・三浦のつぶやき。AI通信のバックナンバーを、表紙から選んでそのまま読めます。">
+<meta property="og:url" content="https://choppermoon1623-tech.github.io/ai-mawashimono/">
+<meta property="og:image" content="https://choppermoon1623-tech.github.io/ai-mawashimono/covers/latest.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#23324d">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<style>
+:root{
+  --navy:#23324d; --navy-2:#34476b; --red:#9b2335; --red-soft:#f6e3e5;
+  --paper:#f7f3ea; --card:#fffdf8; --ink:#1f2430; --muted:#6b7080; --line:#e3dccd;
+  --shadow:0 1px 2px rgba(35,50,77,.08),0 4px 14px rgba(35,50,77,.08);
+  --mark:#ffe58a;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --navy:#1a2438; --navy-2:#2b3b5a; --red:#e07080; --red-soft:#3a2328;
+    --paper:#15181f; --card:#1f232c; --ink:#e8e6e1; --muted:#9aa0ad; --line:#323744;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.3);
+    --mark:#6b5a12;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","BIZ UDPGothic","Yu Gothic UI","Meiryo",system-ui,sans-serif;
+  line-height:1.6}
+button,input,select{font:inherit;color:inherit}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+/* ヘッダー */
+header.site{background:var(--navy);color:#fff}
+header.site .wrap{display:flex;align-items:center;gap:16px;padding-top:18px;padding-bottom:18px;flex-wrap:wrap}
+.brand{flex:1;min-width:240px}
+.brand h1{margin:0;font-size:clamp(26px,4.4vw,38px);letter-spacing:.04em;line-height:1.2;font-weight:900}
+.brand h1 small{font-size:.5em;font-weight:700;margin-left:.5em;opacity:.85;letter-spacing:.08em}
+.brand p{margin:4px 0 0;font-size:14px;opacity:.85}
+.hbtn{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);color:#fff;border-radius:999px;
+  padding:8px 16px;cursor:pointer;font-size:14px;text-decoration:none;white-space:nowrap}
+.hbtn:hover{background:rgba(255,255,255,.22)}
+
+/* 最新号 */
+.latest{margin:28px 0 8px;display:grid;grid-template-columns:minmax(180px,280px) 1fr;gap:28px;align-items:center;
+  background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:var(--shadow)}
+.latest img{width:100%;height:auto;border-radius:6px;border:1px solid var(--line);display:block;cursor:pointer;background:#fff}
+.badge{display:inline-block;background:var(--red);color:#fff;font-weight:700;font-size:13px;border-radius:4px;padding:2px 10px;letter-spacing:.06em}
+.latest .no{font-size:15px;color:var(--muted);margin:10px 0 2px}
+.latest h2{margin:0 0 6px;font-size:clamp(20px,2.8vw,28px);line-height:1.4}
+.latest .sub{margin:0 0 18px;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;gap:6px;border-radius:8px;padding:10px 18px;border:1px solid var(--line);
+  background:var(--card);cursor:pointer;text-decoration:none;font-size:15px;white-space:nowrap}
+.btn:hover{border-color:var(--navy-2)}
+.btn.primary{background:var(--red);border-color:var(--red);color:#fff;font-weight:700}
+.btn.primary:hover{filter:brightness(1.08)}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+
+/* 絞り込み */
+.tools{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(6px);
+  padding:14px 0;margin-top:18px;border-bottom:1px solid var(--line)}
+.tools .wrap{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.search{flex:1;min-width:220px;position:relative}
+.search input{width:100%;padding:11px 14px 11px 40px;border-radius:10px;border:1px solid var(--line);background:var(--card);font-size:16px}
+.search input:focus{outline:2px solid var(--navy-2);outline-offset:0}
+.search svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);opacity:.5}
+.tools select{padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--card)}
+.count{font-size:14px;color:var(--muted);white-space:nowrap}
+
+/* 一覧 */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:22px;padding:22px 0 40px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;cursor:pointer;display:flex;flex-direction:column;
+  box-shadow:var(--shadow);transition:transform .15s,box-shadow .15s;text-align:left;padding:0}
+.card:hover,.card:focus-visible{transform:translateY(-3px);box-shadow:0 8px 24px rgba(35,50,77,.18)}
+.card:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.thumb{aspect-ratio:210/297;overflow:hidden;background:#fff;border-bottom:1px solid var(--line)}
+.thumb img{width:100%;height:auto;display:block}
+.meta{padding:10px 12px 14px;display:flex;flex-direction:column;gap:4px;flex:1}
+.meta .top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.meta .no{font-weight:800;color:var(--red);font-size:15px}
+.meta .date{font-size:12px;color:var(--muted)}
+.meta .theme{font-size:14px;font-weight:700;line-height:1.45;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.meta .snip{font-size:12.5px;color:var(--muted);line-height:1.5;margin-top:4px;background:var(--red-soft);border-radius:6px;padding:6px 8px}
+mark{background:var(--mark);color:inherit;padding:0 1px;border-radius:2px}
+.month{grid-column:1/-1;margin:10px 0 -8px;font-size:15px;font-weight:800;color:var(--navy-2);display:flex;align-items:center;gap:10px}
+@media (prefers-color-scheme:dark){.month{color:#aab8d6}}
+.month::after{content:"";flex:1;height:1px;background:var(--line)}
+.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:60px 0}
+
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px;padding:22px 0 40px}
+footer a{color:var(--muted)}
+
+/* 閲覧ビュー */
+.reader{position:fixed;inset:0;z-index:50;background:#0e1219;display:flex;flex-direction:column}
+.reader[hidden]{display:none}
+.rbar{background:var(--navy);color:#fff;display:flex;align-items:center;gap:8px;padding:8px 10px;flex-wrap:wrap}
+.rbar .title{flex:1;min-width:160px;line-height:1.35;padding:0 6px}
+.rbar .title b{font-size:15px}
+.rbar #rTheme{display:block;font-size:13px;opacity:.85;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rbar .hbtn{padding:7px 12px}
+.rbar .hbtn[disabled]{opacity:.35;cursor:default}
+.rbody{flex:1;position:relative;background:#525659}
+.rbody iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:transparent}
+.rhint{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#aaa;font-size:14px;pointer-events:none}
+.toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%);background:#222;color:#fff;padding:10px 18px;border-radius:999px;
+  font-size:14px;z-index:60;box-shadow:0 4px 16px rgba(0,0,0,.3)}
+.toast[hidden]{display:none}
+
+@media (max-width:640px){
+  .wrap{padding:0 14px}
+  .latest{grid-template-columns:1fr;gap:16px;padding:16px}
+  .latest img{max-width:230px;margin:0 auto}
+  .grid{grid-template-columns:repeat(2,1fr);gap:14px}
+  .meta .theme{font-size:13px}
+  .rbar{flex-wrap:nowrap;gap:4px;padding:6px}
+  .rbar .title{min-width:0;padding:0 4px}
+  .rbar .title b{font-size:14px}
+  .rbar .title .long{display:none}
+  .rbar .hbtn{padding:7px 10px}
+  .rbar .lbl{display:none}
+}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <div class="brand">
+      <h1>AIの回し者<small>バックナンバー</small></h1>
+      <p>〜教務主任・三浦のつぶやき〜 ／ 登別中学校</p>
+    </div>
+    <button class="hbtn" id="shareSite" type="button">🔗 このページを共有</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="latest" id="latest" hidden></section>
+</main>
+
+<div class="tools">
+  <div class="wrap">
+    <label class="search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="キーワードで探す（例：Claude、所見、画像生成）" autocomplete="off" aria-label="キーワードで探す">
+    </label>
+    <select id="sort" aria-label="並び順">
+      <option value="desc">新しい順</option>
+      <option value="asc">古い順</option>
+    </select>
+    <span class="count" id="count"></span>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="grid" id="grid" aria-live="polite"></div>
+</div>
+
+<footer>
+  <div class="wrap">
+    新しい号はGoogleドライブに置かれると、1時間以内に自動でこのページに追加されます（最終更新：<span id="updated">—</span>）。
+    ／ <a id="folderLink" href="https://drive.google.com/drive/folders/19BDyPjDF4oYOL-E4d4OZybZ4KHDLABZC" target="_blank" rel="noopener">元のドライブフォルダ</a>
+  </div>
+</footer>
+
+<div class="reader" id="reader" hidden role="dialog" aria-modal="true" aria-labelledby="rTitle">
+  <div class="rbar">
+    <button class="hbtn" id="rClose" type="button" aria-label="一覧に戻る">✕<span class="lbl"> 一覧へ</span></button>
+    <div class="title"><b id="rTitle"></b><span id="rTheme"></span></div>
+    <button class="hbtn" id="rPrev" type="button" aria-label="前の号">◀<span class="lbl"> 前の号</span></button>
+    <button class="hbtn" id="rNext" type="button" aria-label="次の号"><span class="lbl">次の号 </span>▶</button>
+    <button class="hbtn" id="rShare" type="button">🔗<span class="lbl"> 共有</span></button>
+    <a class="hbtn" id="rOpen" target="_blank" rel="noopener">↗<span class="lbl"> ドライブで開く</span></a>
+    <a class="hbtn" id="rDl" target="_blank" rel="noopener">⬇<span class="lbl"> PDF</span></a>
+  </div>
+  <div class="rbody">
+    <div class="rhint">読み込み中…（表示されないときは「ドライブで開く」をどうぞ）</div>
+    <iframe id="rFrame" title="PDF" allow="autoplay"></iframe>
+  </div>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const norm = s => String(s ?? "").normalize("NFKC").toLowerCase();
+const PAGE_URL = location.origin + location.pathname;
+
+let issues = [];          // 新しい順
+let searchText = null;    // {no: text}
+let searchLoading = null;
+let current = null;
+
+const fmtDate = d => {
+  if (!d) return "";
+  const [y, m, dd] = d.split("-").map(Number);
+  const w = "日月火水木金土"[new Date(y, m - 1, dd).getDay()];
+  return `${y}年${m}月${dd}日（${w}）`;
+};
+const shortDate = d => { if (!d) return ""; const [, m, dd] = d.split("-").map(Number); return `${m}/${dd}`; };
+const cover = i => `covers/No${i.no}.jpg?v=${i.rev}`;
+const issueUrl = i => `${PAGE_URL}#no${i.no}`;
+
+function toast(msg) {
+  const t = $("#toast"); t.textContent = msg; t.hidden = false;
+  clearTimeout(toast.timer); toast.timer = setTimeout(() => t.hidden = true, 2200);
+}
+
+async function share(title, url) {
+  if (navigator.share) {
+    try { await navigator.share({ title, url }); return; } catch (e) { if (e.name === "AbortError") return; }
+  }
+  try { await navigator.clipboard.writeText(url); toast("リンクをコピーしました"); }
+  catch { prompt("このリンクをコピーしてください", url); }
+}
+
+function renderLatest() {
+  const i = issues[0]; if (!i) return;
+  const el = $("#latest");
+  el.innerHTML = `
+    <img src="${cover(i)}" alt="第${i.no}号の表紙" width="640" height="905" data-open="${i.no}">
+    <div>
+      <span class="badge">最新号</span>
+      <div class="no">第${i.no}号 ／ ${fmtDate(i.date)}</div>
+      <h2>${esc(i.theme)}</h2>
+      ${i.subtitle ? `<p class="sub">〜 ${esc(i.subtitle)} 〜</p>` : `<p class="sub"></p>`}
+      <div class="btns">
+        <button class="btn primary" type="button" data-open="${i.no}">📖 読む</button>
+        <button class="btn" type="button" data-share="${i.no}">🔗 この号を共有</button>
+      </div>
+    </div>`;
+  el.hidden = false;
+}
+
+function snippet(text, terms) {
+  const n = norm(text);
+  const pos = n.indexOf(terms[0]);
+  if (pos < 0) return "";
+  const start = Math.max(0, pos - 30), end = Math.min(text.length, pos + terms[0].length + 50);
+  let s = esc((start > 0 ? "…" : "") + text.slice(start, end) + (end < text.length ? "…" : ""));
+  for (const t of terms) {
+    const re = new RegExp(t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "gi");
+    s = s.replace(re, m => `<mark>${m}</mark>`);
+  }
+  return s;
+}
+
+function renderGrid() {
+  const q = norm($("#q").value).trim();
+  const terms = q ? q.split(/\s+/) : [];
+  let list = issues.slice();
+  if ($("#sort").value === "asc") list.reverse();
+
+  const hits = [];
+  for (const i of list) {
+    if (!terms.length) { hits.push({ i }); continue; }
+    const head = norm(`第${i.no}号 ${i.theme} ${i.subtitle}`);
+    const body = searchText ? norm(searchText[i.no] || "") : "";
+    if (terms.every(t => head.includes(t) || body.includes(t))) {
+      const inHead = terms.every(t => head.includes(t));
+      hits.push({ i, snip: !inHead && searchText ? snippet(searchText[i.no] || "", terms.filter(t => !head.includes(t))) : "" });
+    }
+  }
+
+  $("#count").textContent = terms.length ? `${hits.length}件 / 全${issues.length}号` : `全${issues.length}号`;
+
+  let html = "", lastMonth = "";
+  for (const { i, snip } of hits) {
+    const month = i.date ? `${+i.date.slice(0, 4)}年${+i.date.slice(5, 7)}月` : "";
+    if (!terms.length && month && month !== lastMonth) { html += `<h3 class="month">${month}</h3>`; lastMonth = month; }
+    let theme = esc(i.theme || i.file);
+    for (const t of terms) theme = theme.replace(new RegExp(esc(t).replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "gi"), m => `<mark>${m}</mark>`);
+    html += `
+      <button class="card" type="button" data-open="${i.no}" aria-label="第${i.no}号 ${esc(i.theme)}">
+        <div class="thumb"><img src="${cover(i)}" alt="" loading="lazy" width="640" height="905"></div>
+        <div class="meta">
+          <div class="top"><span class="no">第${i.no}号</span><span class="date">${shortDate(i.date)}</span></div>
+          <div class="theme">${theme}</div>
+          ${snip ? `<div class="snip">${snip}</div>` : ""}
+        </div>
+      </button>`;
+  }
+  if (!hits.length) html = `<div class="empty">${terms.length && !searchText ? "本文を読み込み中…" : "見つかりませんでした"}</div>`;
+  $("#grid").innerHTML = html;
+}
+
+function loadSearch() {
+  if (searchText || searchLoading) return searchLoading;
+  searchLoading = fetch("data/search.json", { cache: "no-cache" }).then(r => r.json()).then(d => { searchText = d; renderGrid(); });
+  return searchLoading;
+}
+
+function openIssue(no, push = true) {
+  const idx = issues.findIndex(i => i.no === no);
+  if (idx < 0) return;
+  const i = issues[idx]; current = i;
+  $("#rTitle").innerHTML = `第${i.no}号 <span class="long">${fmtDate(i.date)}</span>`;
+  $("#rTheme").textContent = i.theme;
+  $("#rFrame").src = `https://drive.google.com/file/d/${i.id}/preview`;
+  $("#rOpen").href = `https://drive.google.com/file/d/${i.id}/view`;
+  $("#rDl").href = `https://drive.google.com/uc?export=download&id=${i.id}`;
+  $("#rPrev").disabled = !issues[idx + 1];
+  $("#rNext").disabled = !issues[idx - 1];
+  $("#reader").hidden = false;
+  document.body.style.overflow = "hidden";
+  document.title = `第${i.no}号 ${i.theme} | AIの回し者`;
+  if (push && location.hash !== `#no${i.no}`) history.pushState(null, "", `#no${i.no}`);
+}
+
+function closeReader(push = true) {
+  if ($("#reader").hidden) return;
+  $("#reader").hidden = true;
+  $("#rFrame").src = "about:blank";
+  document.body.style.overflow = "";
+  document.title = "AIの回し者 バックナンバー";
+  current = null;
+  if (push && location.hash) history.pushState(null, "", location.pathname + location.search);
+}
+
+function step(dir) {  // dir: -1 = 前の号(古い), +1 = 次の号(新しい)
+  if (!current) return;
+  const idx = issues.findIndex(i => i.no === current.no);
+  const next = issues[idx - dir];
+  if (next) openIssue(next.no, false), history.replaceState(null, "", `#no${next.no}`);
+}
+
+function fromHash() {
+  const m = location.hash.match(/^#(?:no)?(\d+)$/);
+  if (m) openIssue(+m[1], false); else closeReader(false);
+}
+
+document.addEventListener("click", e => {
+  const o = e.target.closest("[data-open]");
+  if (o) { openIssue(+o.dataset.open); return; }
+  const s = e.target.closest("[data-share]");
+  if (s) { const i = issues.find(x => x.no === +s.dataset.share); share(`AIの回し者 第${i.no}号「${i.theme}」`, issueUrl(i)); }
+});
+$("#rClose").onclick = () => closeReader();
+$("#rPrev").onclick = () => step(-1);
+$("#rNext").onclick = () => step(1);
+$("#rShare").onclick = () => current && share(`AIの回し者 第${current.no}号「${current.theme}」`, issueUrl(current));
+$("#shareSite").onclick = () => share("AIの回し者 バックナンバー", PAGE_URL);
+$("#q").addEventListener("input", () => { if ($("#q").value.trim()) loadSearch(); renderGrid(); });
+$("#q").addEventListener("focus", loadSearch, { once: true });
+$("#sort").onchange = renderGrid;
+window.addEventListener("popstate", fromHash);
+document.addEventListener("keydown", e => {
+  if ($("#reader").hidden) return;
+  if (e.key === "Escape") closeReader();
+  else if (e.key === "ArrowLeft") step(-1);
+  else if (e.key === "ArrowRight") step(1);
+});
+
+fetch("data/issues.json", { cache: "no-cache" })
+  .then(r => r.json())
+  .then(d => {
+    issues = d.issues.sort((a, b) => b.no - a.no);
+    if (d.updated) $("#updated").textContent = d.updated.slice(0, 16).replace("T", " ");
+    renderLatest();
+    renderGrid();
+    fromHash();
+  })
+  .catch(() => { $("#grid").innerHTML = `<div class="empty">一覧を読み込めませんでした。時間をおいて再読み込みしてください。</div>`; });
+</script>
+</body>
+</html>
