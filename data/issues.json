@@ -1,12 +1,24 @@
 {
- "updated": "2026-09-14T03:10:47+09:00",
+ "updated": "2026-09-14T21:48:53+09:00",
  "folder": "https://drive.google.com/drive/folders/19BDyPjDF4oYOL-E4d4OZybZ4KHDLABZC",
  "issues": [
+  {
+   "no": 85,
+   "id": "1dfryhkhDpWrmUcmV2XDkvgJp5cegowNg",
+   "file": "AIの回し者_No85.pdf",
+   "modified": "4:37 am",
+   "date": "2026-09-15",
+   "theme": "定演のポスターを作った話 ── GPT Images 2.5だけじゃダメなんです",
+   "subtitle": "デザインはAI、顔は本物。役割を分けたら、入稿できた",
+   "pages": 2,
+   "landscape": false,
+   "rev": "51ad6e7b"
+  },
   {
    "no": 84,
    "id": "1lwS-pCv9S5f8FX4qlCuqZ9gtYF3IgtlX",
    "file": "AIの回し者_No84.pdf",
-   "modified": "8:41 am",
+   "modified": "Sep 13",
    "date": "2026-09-14",
    "theme": "混ぜるな危険。「ドパガキ」と「AI中毒」は別の病です",
    "subtitle": "依存をこわがる前に、まず正体を分解してみた",
