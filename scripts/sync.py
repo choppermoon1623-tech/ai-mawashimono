@@ -68,7 +68,9 @@ def clean(text: str) -> str:
 
 
 def parse_date(text: str) -> str | None:
-    m = re.search(r"令和\s*(\d+)\s*年\s*(\d+)\s*月\s*(\d+)\s*日", text)
+    # 本文中の日付（研修日など）より、「発行:」の日付を優先する
+    date = r"令和\s*(\d+)\s*年\s*(\d+)\s*月\s*(\d+)\s*日"
+    m = re.search(r"発行\s*[:：]?\s*" + date, text) or re.search(date, text)
     if not m:
         return None
     y, mo, d = 2018 + int(m[1]), int(m[2]), int(m[3])
