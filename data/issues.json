@@ -1,7 +1,19 @@
 {
- "updated": "2026-10-10T21:27:20+09:00",
+ "updated": "2026-10-13T18:22:42+09:00",
  "folder": "https://drive.google.com/drive/folders/19BDyPjDF4oYOL-E4d4OZybZ4KHDLABZC",
  "issues": [
+  {
+   "no": 101,
+   "id": "19B-MqNrZMMcwGPaKIb25EHDNI1QwzF1E",
+   "file": "AIの回し者_No101.pdf",
+   "modified": "Oct 10",
+   "date": "2026-10-13",
+   "theme": "セキュリティについて語る。明日は我が身",
+   "subtitle": "情報流出のニュースが止まらない今、私たちにできること",
+   "pages": 2,
+   "landscape": false,
+   "rev": "db708111"
+  },
   {
    "no": 100,
    "id": "1c04RHqxG14n_zmb8ASaeWqWVz1o-0OCG",
