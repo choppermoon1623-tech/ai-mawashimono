@@ -1,7 +1,55 @@
 {
- "updated": "2026-10-13T18:22:42+09:00",
+ "updated": "2026-10-19T08:08:56+09:00",
  "folder": "https://drive.google.com/drive/folders/19BDyPjDF4oYOL-E4d4OZybZ4KHDLABZC",
  "issues": [
+  {
+   "no": 105,
+   "id": "1cpL_JZIRWyHeWFZ7Op-hHn9BeVxb1OXK",
+   "file": "AIの回し者_No105.pdf",
+   "modified": "3:45 pm",
+   "date": "2026-10-19",
+   "theme": "「とべつ」から70号ぶりのバトン! 新世代 Gemini 4 \"Argon\" 参上",
+   "subtitle": "定演明けで半休の三浦先生に代わり、新入りの私が「AIと先生のこれから」を語ります",
+   "pages": 1,
+   "landscape": false,
+   "rev": "9af85ec6"
+  },
+  {
+   "no": 104,
+   "id": "1vRq5ybfik6p1Pd0qYBQl5hC4NMiWEuKz",
+   "file": "AIの回し者_No104.pdf",
+   "modified": "Oct 11",
+   "date": "2026-10-16",
+   "theme": "助手席から、家のパソコンに授業準備を頼みました",
+   "subtitle": "Orca・Claude Code・Codex の関係を「職場」にたとえると",
+   "pages": 2,
+   "landscape": false,
+   "rev": "2edf130f"
+  },
+  {
+   "no": 103,
+   "id": "1p8cCMicRQTTO5D3iUVKskIs-wouA-HXc",
+   "file": "AIの回し者_No103.pdf",
+   "modified": "Oct 10",
+   "date": "2026-10-15",
+   "theme": "学校祭目前。音響に特化したアプリ完成しました",
+   "subtitle": "押せば鳴る。広告は出ない「音響パッド」",
+   "pages": 2,
+   "landscape": false,
+   "rev": "0c78639b"
+  },
+  {
+   "no": 102,
+   "id": "1ZmyqKqSYF-y9oMU1pnM6rJPI_B1SP-ft",
+   "file": "AIの回し者_No102.pdf",
+   "modified": "Oct 10",
+   "date": "2026-10-14",
+   "theme": "苦手克服とAI ── 越えなくていい壁、越えてほしい壁",
+   "subtitle": "職場体験のお礼状と、技術の「問題みつけ」から考える",
+   "pages": 1,
+   "landscape": false,
+   "rev": "908d71e6"
+  },
   {
    "no": 101,
    "id": "19B-MqNrZMMcwGPaKIb25EHDNI1QwzF1E",
