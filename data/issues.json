@@ -1,7 +1,31 @@
 {
- "updated": "2026-10-20T19:01:01+09:00",
+ "updated": "2026-10-22T13:39:16+09:00",
  "folder": "https://drive.google.com/drive/folders/19BDyPjDF4oYOL-E4d4OZybZ4KHDLABZC",
  "issues": [
+  {
+   "no": 108,
+   "id": "1EBvvYzuxpuBiPgDNuVtQbaVlzi0kLzb0",
+   "file": "AIの回し者_No108.pdf",
+   "modified": "5:20 pm",
+   "date": "2026-10-22",
+   "theme": "緊急号。PHPの脆弱性って何なん??",
+   "subtitle": "国内200以上の組織が止まった夜に、何が起きていたのか",
+   "pages": 1,
+   "landscape": false,
+   "rev": "34e02354"
+  },
+  {
+   "no": 107,
+   "id": "1pZgmXKn9vzYvplcWODIKP-BbyDJjw8Of",
+   "file": "AIの回し者_No107.pdf",
+   "modified": "Oct 20",
+   "date": "2026-10-21",
+   "theme": "定演×AI 一つのイベントにどれだけAIが絡んだのか",
+   "subtitle": "ファイナルコンサートの準備を、AI目線で振り返る",
+   "pages": 2,
+   "landscape": false,
+   "rev": "0505855d"
+  },
   {
    "no": 106,
    "id": "1lepkhsPGKHduU2OJeEhKFM7uy8l5i5nA",
