@@ -1,7 +1,31 @@
 {
- "updated": "2026-10-26T16:18:35+09:00",
+ "updated": "2026-10-28T21:47:33+09:00",
  "folder": "https://drive.google.com/drive/folders/19BDyPjDF4oYOL-E4d4OZybZ4KHDLABZC",
  "issues": [
+  {
+   "no": 112,
+   "id": "1436mt2rzPPhf8TK5N_6KtWC09lIbPgtL",
+   "file": "AIの回し者_No112.pdf",
+   "modified": "Oct 27",
+   "date": "2026-10-28",
+   "theme": "無料のチャッピーが、道具を作ってくれる。ぜひ一度お試しを!",
+   "subtitle": "無料版にもGPT-6。「ツールにして」のひと言で、答えが動き出す",
+   "pages": 1,
+   "landscape": false,
+   "rev": "8ce6c436"
+  },
+  {
+   "no": 111,
+   "id": "1yRsMcYWk6UUV_bKnO2kjjDdEGR3SrYJe",
+   "file": "AIの回し者_No111.pdf",
+   "modified": "Oct 26",
+   "date": "2026-10-27",
+   "theme": "回顧展に出品。鬼みこしレプリカ作成とAI",
+   "subtitle": "4方向の写真から3Dデータ、マイコン1枚で目も煙も電飾も",
+   "pages": 1,
+   "landscape": false,
+   "rev": "629ff2cf"
+  },
   {
    "no": 110,
    "id": "1eZdM8jtgyXMBgP5mBfonqlJGdADsosl_",
