@@ -1,7 +1,19 @@
 {
- "updated": "2026-11-12T18:45:59+09:00",
+ "updated": "2026-11-13T08:39:58+09:00",
  "folder": "https://drive.google.com/drive/folders/19BDyPjDF4oYOL-E4d4OZybZ4KHDLABZC",
  "issues": [
+  {
+   "no": 123,
+   "id": "16m4ZyCLCzQPtZQfcJSpWJshRA3-X5SM5",
+   "file": "AIの回し者_No123.pdf",
+   "modified": "Nov 11",
+   "date": "2026-11-13",
+   "theme": "ここであえてHTMLを振り返る",
+   "subtitle": "作ったアプリ、どうやって人に使ってもらう?",
+   "pages": 2,
+   "landscape": false,
+   "rev": "77b1ff12"
+  },
   {
    "no": 122,
    "id": "1FuvdNVhHMTPdwwQ43R8rviY_560FJs46",
