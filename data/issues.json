@@ -1,7 +1,31 @@
 {
- "updated": "2026-11-25T09:40:04+09:00",
+ "updated": "2026-11-27T14:00:28+09:00",
  "folder": "https://drive.google.com/drive/folders/19BDyPjDF4oYOL-E4d4OZybZ4KHDLABZC",
  "issues": [
+  {
+   "no": 132,
+   "id": "1KjzjlsPEvqSSFFrcQcHhhe7zMJ__IhqQ",
+   "file": "AIの回し者_No132.pdf",
+   "modified": "Nov 25",
+   "date": "2026-11-27",
+   "theme": "「気づく・考える・動かす」── 技術科の学びを掛け合わせる日",
+   "subtitle": "技術科におけるAI活用。統合的な問題解決への活用",
+   "pages": 1,
+   "landscape": false,
+   "rev": "aa67c996"
+  },
+  {
+   "no": 131,
+   "id": "13OL8dfjhmUCh2FH6NeLfpt9JwgAmZLsl",
+   "file": "AIの回し者_No131.pdf",
+   "modified": "Nov 23",
+   "date": "2026-11-26",
+   "theme": "つなげないから、守れる。",
+   "subtitle": "インターネットを介さず、三浦先生のパソコンの中で独り言を言うAIの挑戦。",
+   "pages": 1,
+   "landscape": false,
+   "rev": "a790e5a8"
+  },
   {
    "no": 130,
    "id": "1Fr7bCyixbwmyK8C9a9bbVEqp1VjIzhkp",
